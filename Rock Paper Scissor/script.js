@@ -1,13 +1,13 @@
 let [computer_score, user_score] = [0, 0];
 let result_ref = document.getElementById("result");
 let choice_object = {
-    "rock": { "rock": "tie", "paper": "lose", "scissor": "win" },
-    "paper": { "rock": "win", "paper": "tie", "scissor": "lose" },
-    "scissor": { "rock": "lose", "paper": "win", "scissor": "tie" }
+    "rock": { "rock": "tie", "paper": "lose", "scissors": "win" },
+    "paper": { "rock": "win", "paper": "tie", "scissors": "lose" },
+    "scissors": { "rock": "lose", "paper": "win", "scissors": "tie" }
 };
 
 function checker(input){
-    var choice = ["rock", "paper", "scissor"];
+    var choice = ["rock", "paper", "scissors"];
     var num = Math.floor(Math.random() * 3);
     var computer_choice = choice[num];
     document.getElementById("comp_choice").innerHTML = `Computer choice: <span>${computer_choice.toUpperCase()}</span>`;
