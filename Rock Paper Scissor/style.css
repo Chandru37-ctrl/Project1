@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  background: linear-gradient(135deg, #ffcf1b, #ff8b1b);
+}
+.container {
+  width: 45%;
+  min-width: 500px;
+  background-color: #ffffff;
+  padding: 40px 30px;
+  border-radius: 10px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+.score {
+  margin-bottom: 10px;
+  text-align: right;
+}
+.weapons {
+  display: flex;
+  justify-content: space-around;
+  width: 90%;
+  margin: auto;
+}
+.weapons button {
+  background-color: #dbd8ca;
+  color: #000000;
+  border: none;
+  font-size: 50px;
+  height: 110px;
+  width: 110px;
+  border-radius: 50%;
+  outline: none;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+img {
+  height: 80px;
+  width: 80px;
+  margin: 10px;
+}
+.weapons button:hover {
+  transform: scale(1.1);
+}
+.details {
+  text-align: center;
+  margin-top: 30px;
+}
+.score,
+.details {
+  font-size: 20px;
+  font-weight: 400;
+}
+#user_choice,
+#comp_choice {
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+.user_choice span,
+#comp_choice span {
+  font-weight: 600;
+}
+#result {
+  width: 180px;
+  padding: 10px 0;
+  margin: 30px auto;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  border-radius: 5px;
+}
