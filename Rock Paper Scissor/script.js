@@ -17,12 +17,12 @@ function checker(input){
         case "win":
             result_ref.style.cssText = "background-color: #cefdce; color: #689f38;";
             result_ref.innerHTML = "You Win!";
-            user_score += 1;
+            user_score ++;
             break;
         case "lose":
             result_ref.style.cssText = "background-color: #ffcccc; color: #d32f2f;";
             result_ref.innerHTML = "You Lose!";
-            computer_score += 1;
+            computer_score ++;
             break;
         case "tie":
             result_ref.style.cssText = "background-color: #fff3e0; color: #f57c00;";
